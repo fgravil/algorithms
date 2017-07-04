@@ -11,17 +11,18 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 1, 7, 5, 3, 6, 2, 0 };
+            int[] arr = new int[] { 1 };
             InsertionSort insertionSort = new InsertionSort();
             MergeSort mergeSort = new MergeSort();
+            QuickSort quickSort = new QuickSort();
 
             Console.Write("Initial Array: ");
             foreach (var num in arr) Console.Write("{0} ", num);
 
             Console.WriteLine();
 
-            arr = mergeSort.Sort(arr);
-            Console.Write("Array After Merge Sort: ");
+            arr = quickSort.Sort(arr);
+            Console.Write("Array After Quick Sort: ");
             foreach (var num in arr)
             {
                 Console.Write("{0} ", num);

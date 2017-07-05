@@ -10,19 +10,19 @@ namespace C_Sharp
     {
         public int[] InsertionSort(int[] arr)
         {
-            int key, j;
+            int key, prev;
             for(int i = 2; i < arr.Length; i++)
             {
                 key = arr[i];
-                j = i - 1;
+                prev = i - 1;
 
-                while(j > 0 && arr[j] > key)
+                while(prev >= 0 && arr[prev] > key)
                 {
-                    arr[j + 1] = arr[j];
-                    j--;
+                    arr[prev + 1] = arr[prev];
+                    prev--;
                 }
 
-                arr[j + 1] = key;
+                arr[prev + 1] = key;
             }
             return arr;
         }

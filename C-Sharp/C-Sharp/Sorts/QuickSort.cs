@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Sharp.Sorts
 {
-    public class QuickSort
+    public class QuickSort : ISorter
     {
         public int[] Sort(int[] arr)
         {

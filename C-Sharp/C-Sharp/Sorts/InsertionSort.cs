@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_Sharp.Sorts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace C_Sharp
 {
-    public class InsertionSort
+    public class InsertionSort : ISorter
     {
         public int[] Sort(int[] arr)
         {

@@ -1,7 +1,13 @@
-﻿namespace C_Sharp.Sorts
+﻿using System;
+
+namespace C_Sharp.Sorts
 {
     public class InsertionSort : ISorter
     {
+        public string Name = "Insertion Sort";
+
+        string ISorter.Name { get { return Name; } }
+
         public int[] Sort(int[] arr)
         {
             int currValue, prevIndex;

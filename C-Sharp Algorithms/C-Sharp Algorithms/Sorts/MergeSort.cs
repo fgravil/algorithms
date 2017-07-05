@@ -2,6 +2,10 @@
 {
     public class MergeSort : ISorter
     {
+        public string Name = "Merge Sort";
+
+        string ISorter.Name { get { return Name; } }
+
         public int[] Sort(int[] arr)
         {
             int arrLength = arr.Length;

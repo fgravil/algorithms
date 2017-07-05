@@ -12,9 +12,9 @@ namespace EfficiencyTests
         static void Main(string[] args)
         {
             ISortEfficiencyTest SET = new SortEfficiencyTest();
-            int[] arr = new int[] { 1, 7, 5, 3, 6, 2, 0 };
+            int[] arr = new int[] { 1, 7, 5, 3, 6, 2, 0, 3, 1, 6, 4 ,3 ,6 ,7, 8, 2,34,67, 1, 6, 2,1 ,23 ,7,9,4,2};
 
-            SET.CompareSorts(arr, new MergeSort(), new QuickSort());
+            SET.CompareSorts(arr, new InsertionSort(), new InsertionSort());
 
             Console.ReadLine();
         }

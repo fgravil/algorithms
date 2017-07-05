@@ -2,6 +2,9 @@
 {
     public class QuickSort : ISorter
     {
+        public string Name = "Quick Sort";
+
+        string ISorter.Name { get { return Name; } }
         public int[] Sort(int[] arr)
         {
             quicksort(arr, 0, arr.Length - 1);
